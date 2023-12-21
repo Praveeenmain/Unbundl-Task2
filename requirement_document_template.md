@@ -1,5 +1,4 @@
 # Title
-
     Customizable Product Bundle for Chocolate brand.
 
 ## Objective
@@ -16,23 +15,9 @@ automatically based on the selected products.
 
     Html,css,javascript
 
-## Completion Instructions
 
 
 
-### Submission Instructions
 
-
-
-## Resources
-
-### Design files
-
-    List the references of design files required for the Assignment
-    
-
-### APIs
-
-   https://jsonkeeper.com/b/H8ES
 
 
