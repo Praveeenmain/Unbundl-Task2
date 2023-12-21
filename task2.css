@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    background-color: brown;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    animation: pulse 1.5s infinite alternate ease-in-out; /* Adding pulse animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    100% {
+        transform: scale(1.1); /* Scale up to 110% */
+    }
+}
+.heading {
+    animation: colorChange 3s infinite; /* Apply colorChange animation */
+    text-decoration: underline;
+}
+
+@keyframes colorChange {
+    0% {
+        color: white; /* Initial color */
+    }
+    50% {
+        color: black; /* Midway color */
+    }
+    100% {
+        color: Grey; /* Back to initial color */
+    }
+}
+
+
+
+/* Chocolates Grid Layout */
+.chocolates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.chocolate {
+    margin-bottom: 10px;
+}
+
+/* Selected List Styles */
+.selected-list {
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    /* Larger Devices (min-width: 768px) */
+
+    /* Display selected list items side by side */
+    .selected-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Adjust width for each selected item */
+    .selected-list li {
+        width: calc(50% - 10px); /* Two items per row with some spacing */
+        margin-bottom: 10px;
+    }
+}
